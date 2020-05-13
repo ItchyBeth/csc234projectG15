@@ -11,20 +11,11 @@ class mapstate extends State<map> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: Container(
-        child: Center(
-          child: Column(
-            children: <Widget>[
-              Image.asset(
-                'ass/img/lx.png',
-                width: 200,
-                height: 200,
-              )
-            ],
-          
-  
-
-          ),
+      body: Center(
+        child: Image.asset(
+          'ass/img/lx.png',
+          width: 250,
+          height: 250,
         ),
       ),
     );
