@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'LXMap',
       debugShowCheckedModeBanner: false,
 
-      home: hpage(),
+      home: room(),
 
     );
   }

@@ -31,11 +31,9 @@ class roomstate extends State<room> {
               )),
 
 
-
-
-
               Container(
                 alignment: Alignment.center,
+                margin: EdgeInsets.only(top: 20.0),
                 
                 child: Text(
                   "1st Floor",
@@ -43,17 +41,44 @@ class roomstate extends State<room> {
                 ),
               ),
               ),
+
+
               Container(
                 alignment: AlignmentDirectional.center,
+                margin: EdgeInsets.only(bottom: 20.0),
 
                 child: Image.asset(
-                  'ass/img'
+                  'ass/img/map.png',
+                  width: 350,
                 ),
               ),
+
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+
+                  children: const <Widget>[
+                    IconButton(
+                      icon: Icon(Icons.home), color: Colors.orange, iconSize: 40.0,
+                      onPressed: null),
+                    IconButton(
+                      icon: Icon(Icons.fastfood), color: Colors.orange, iconSize: 40.0,
+                      onPressed: null),
+                    IconButton(
+                      icon: Icon(Icons.unfold_more), color: Colors.orange, iconSize: 40.0,
+                      onPressed: null),
+                    IconButton(
+                      icon: Icon(Icons.wc), color: Colors.orange, iconSize: 40.0,
+                      onPressed: null),
+
+                  ],
+                ),
             ],
           ),
-        
       ),
+
+
+      
     );
   }
 }
