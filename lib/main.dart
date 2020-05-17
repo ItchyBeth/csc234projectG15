@@ -14,11 +14,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'LXMap',
       debugShowCheckedModeBanner: false,
-      home: map(),
+
+      home: hpage(),
+
     );
   }
 }
-
-
-
 
