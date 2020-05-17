@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_app/screens/map.dart';
-import 'screens/map.dart';
+import 'screens/homepage.dart';
 
 
 void main(){
@@ -13,7 +13,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'LXMap',
       debugShowCheckedModeBanner: false,
-      home: search(),
+
+      home: hpage(),
+
     );
   }
 }
