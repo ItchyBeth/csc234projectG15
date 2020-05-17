@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'screens/home.dart';
+import 'package:flutter_app/screens/home.dart';
+import 'package:flutter_app/screens/map.dart';
+import 'screens/roominfo.dart';
 
 
 void main(){
