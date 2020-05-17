@@ -13,26 +13,49 @@ class searchstate extends State<search> {
       backgroundColor: Colors.white,
       body: Container(
         padding: EdgeInsets.only(top: 30),
-        child: Column(
-          children: <Widget>[
-            Container(
-                child: Align(
-              alignment: Alignment.topLeft,
-              child: IconButton(
-                icon: Icon(
-                  Icons.arrow_back,
-                  size: 60,
+        
+          child: Column(
+            children: <Widget>[
+              Container(
+                  child: Align(
+                alignment: Alignment.topLeft,
+                child: IconButton(
+                  icon: Icon(
+                    Icons.arrow_back,
+                    size: 50,
+                  ),
+                  color: Colors.orange,
+                  onPressed: () {},
                 ),
-                color: Colors.orange,
-                onPressed: () {},
+              )),
+
+
+
+
+
+              Container(
+                margin: EdgeInsets.all(30.0),
+                child: new TextField(
+                
+                  decoration: InputDecoration(
+                    contentPadding: const EdgeInsets.symmetric(vertical: 15.0),
+                    hintText: "Search",
+                    prefixIcon: Icon(
+                      Icons.search,
+                      color: Colors.orange,
+                    ),
+                    enabledBorder: const OutlineInputBorder(
+                      borderRadius: BorderRadius.all(Radius.circular(80)),
+                      borderSide: BorderSide(color: Colors.orange, width: 2),
+                         
+                    ),
+                  ),
+                ),
               ),
-            )),
-            Container(
-              
-            ),
-            Container(),
-          ],
-        ),
+              Container(),
+            ],
+          ),
+        
       ),
     );
   }
