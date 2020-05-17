@@ -13,62 +13,78 @@ class searchstate extends State<search> {
       backgroundColor: Colors.white,
       body: Container(
         padding: EdgeInsets.only(top: 30),
-        
-          child: Column(
-            children: <Widget>[
-              Container(
-                  child: Align(
-                alignment: Alignment.topLeft,
-                child: IconButton(
-                  icon: Icon(
-                    Icons.arrow_back,
-                    size: 50,
-                  ),
-                  color: Colors.orange,
-                  onPressed: () {},
+        child: Column(
+          children: <Widget>[
+            Container(
+                child: Align(
+              alignment: Alignment.topLeft,
+              child: IconButton(
+                icon: Icon(
+                  Icons.arrow_back,
+                  size: 50,
                 ),
-              )),
-
-
-
-
-
-              Container(
-                
-                margin: EdgeInsets.only(left: 30.0, right: 30.0,top: 30.0),
-                child: new TextField(
-                
-                  decoration: InputDecoration(
-                    contentPadding: const EdgeInsets.symmetric(vertical: 15.0),
-                    hintText: "Search",
-                    prefixIcon: Icon(
-                      Icons.search,
-                      color: Colors.orange,
-                    ),
-                    enabledBorder: const OutlineInputBorder(
-                      borderRadius: BorderRadius.all(Radius.circular(80)),
-                      borderSide: BorderSide(color: Colors.orange, width: 2),
-                         
-                    ),
+                color: Colors.orange,
+                onPressed: () {},
+              ),
+            )),
+            Container(
+              margin: EdgeInsets.only(left: 30.0, right: 30.0, top: 30.0),
+              child: new TextField(
+                decoration: InputDecoration(
+                  contentPadding: const EdgeInsets.symmetric(vertical: 15.0),
+                  hintText: "Search",
+                  prefixIcon: Icon(
+                    Icons.search,
+                    color: Colors.orange,
+                  ),
+                  enabledBorder: const OutlineInputBorder(
+                    borderRadius: BorderRadius.all(Radius.circular(80)),
+                    borderSide: BorderSide(color: Colors.orange, width: 2),
                   ),
                 ),
               ),
-              Container(
-               height: 270.0,
-                child: Image.asset(
-          'ass/img/map.png',
-          width: 350,
-          height: 350,
+            ),
+            Container(
+              height: 270.0,
+              child: Image.asset(
+                'ass/img/map.png',
+                width: 350,
+                height: 350,
+              ),
+            ),
+            Column(
+              
+                
+
+                 children: const <Widget>[
+                Icon(
+                  Icons.favorite,
+                  color: Colors.pink,
+                  size: 24.0,
+                  semanticLabel: 'Text to announce in accessibility modes',
+                  
+                ),
+                TextSpan(
+                          text: "Living Room \n",
+                          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold,fontSize: 35),
+                        ),
+                Icon(
+                  Icons.audiotrack,
+                  color: Colors.green,
+                  size: 30.0,
+                ),
+                Icon(
+                  Icons.beach_access,
+                  color: Colors.blue,
+                  size: 36.0,
+                ),
+              ],
+              
+             
+            ),
+          ],
         ),
-              ),
-            ],
-          ),
-        
       ),
-      
     );
   }
 }
-
-
-
