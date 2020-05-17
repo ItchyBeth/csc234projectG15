@@ -4,6 +4,7 @@ import 'package:flutter_app/screens/map.dart';
 import 'package:flutter_app/screens/homepage.dart';
 
 import 'screens/map.dart';
+import 'screens/roominfo.dart';
 
 void main(){
   runApp(MyApp());
