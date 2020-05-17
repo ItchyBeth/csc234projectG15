@@ -34,7 +34,8 @@ class searchstate extends State<search> {
 
 
               Container(
-                margin: EdgeInsets.all(30.0),
+                
+                margin: EdgeInsets.only(top: 30.0),
                 child: new TextField(
                 
                   decoration: InputDecoration(
@@ -52,7 +53,13 @@ class searchstate extends State<search> {
                   ),
                 ),
               ),
-              Container(),
+              Container(
+                child: Image.asset(
+          'ass/img/map.png',
+          width: 350,
+          height: 350,
+        ),
+              ),
             ],
           ),
         
