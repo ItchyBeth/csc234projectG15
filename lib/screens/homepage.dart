@@ -6,33 +6,61 @@ class hpage extends StatefulWidget {
   hpagestate createState() => hpagestate();
 }
 
-
 class hpagestate extends State<hpage> {
-  sampleFunction(){
+  sampleFunction() {
     print('Button Clicked');
   }
-   @override
-    Widget build(BuildContext context) {
+
+  @override
+  Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         body: SafeArea(
-          child : Center(
-          child: 
-          Container(
-            width: 180.0,
-            height: 60.0,
-            child : new RaisedButton(
+          child: Center(
+            child: Column(
+              children: <Widget>[
+
+
+
+
+                Container(
+                  width: 180.0,
+                  height: 60.0,
+                  child: new RaisedButton(
                     onPressed: () => {},
                     color: Colors.orange,
                     child: new Text(
-                            "MAP",
-                            style: new TextStyle(
-                            fontSize: 30.0,
-                            color: Colors.white,),    
+                      "MAP",
+                      style: new TextStyle(        //ปุ่ม1
+                        fontSize: 30.0,
+                        color: Colors.white,
+                      ),
                     ),
+                  ),
+                ),
+
+
+
+                Container(
+                  width: 180.0,
+                  height: 60.0,
+                  child: new RaisedButton(
+                    onPressed: () => {},
+                    color: Colors.orange,
+                    child: new Text(
+                      "MAP",                           //ปุ่ม2
+                      style: new TextStyle(
+                        fontSize: 30.0,
+                        color: Colors.white,
+                      ),
                     ),
+                  ),
+                ),
+
+
+
+              ],
             ),
-            
           ),
         ),
       ),
