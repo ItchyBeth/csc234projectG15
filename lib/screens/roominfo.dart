@@ -43,7 +43,13 @@ class roomstate extends State<room> {
                 ),
               ),
               ),
-              Container(),
+              Container(
+                alignment: AlignmentDirectional.center,
+
+                child: Image.asset(
+                  'ass/img'
+                ),
+              ),
             ],
           ),
         
