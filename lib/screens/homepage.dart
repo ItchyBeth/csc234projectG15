@@ -7,9 +7,9 @@ class hpage extends StatefulWidget {
 }
 
 class hpagestate extends State<hpage> {
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
+   @override
+    Widget build(BuildContext context) {
+      return Scaffold(
         body: Center(
           child: RaisedButton(
             onPressed: () => {},
@@ -22,5 +22,5 @@ class hpagestate extends State<hpage> {
           ),
         
     );
-  }
+    }
 }
