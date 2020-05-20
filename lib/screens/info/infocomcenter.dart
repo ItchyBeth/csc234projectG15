@@ -73,7 +73,7 @@ class infocomcenterstate extends State<infocomcenter> {
                       semanticLabel: 'Text to announce in accessibility modes',
                     ),
                     Text(
-                      '  Open 8AM - 7PM',
+                      '  Open 8AM - 9PM',
                       style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20),
                     )
                   ]),

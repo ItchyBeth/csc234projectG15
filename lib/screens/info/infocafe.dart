@@ -73,7 +73,7 @@ class infocafestate extends State<infocafe> {
                       semanticLabel: 'Text to announce in accessibility modes',
                     ),
                     Text(
-                      '  Open 9AM - 17AM',
+                      '  Open 9AM - 5PM',
                       style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20),
                     )
                   ]),
