@@ -21,7 +21,7 @@ class searchstate extends State<search> {
               child: IconButton(
                 icon: Icon(
                   Icons.arrow_back_ios,
-                  size: 40,
+                  size: 50,
                 ),
                 color: Colors.orange,
                 onPressed: () {},
