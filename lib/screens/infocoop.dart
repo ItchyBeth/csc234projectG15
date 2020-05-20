@@ -1,13 +1,12 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 
-
-class room extends StatefulWidget {
+class infocoop extends StatefulWidget {
   @override
-  roomstate createState() => roomstate();
+  infocoopstate createState() => infocoopstate();
 }
 
-class roomstate extends State<room> {
+class infocoopstate extends State<infocoop> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,24 +30,13 @@ class roomstate extends State<room> {
               )),
 
               Container(
-                alignment: Alignment.center,
-                
-                child: Text(
-                  "1st Floor",
-                  style: TextStyle(fontSize: 25, color: Colors.orange, fontWeight: FontWeight.bold
-                ),
-              ),
-              ),
-              Container(
-                alignment: AlignmentDirectional.center,
-
-                child: Image.asset(
-                  'ass/img'
+                child: Image.asset('ass/img/cooperative shop.jpg',
+                  width: 350,
+                  height: 350,
                 ),
               ),
             ],
           ),
-        
       ),
     );
   }
