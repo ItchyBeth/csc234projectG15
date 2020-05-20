@@ -87,7 +87,7 @@ class searchstate extends State<search> {
                       semanticLabel: 'Text to announce in accessibility modes',
                     ),
                     Text(
-                      '  Open 9AM - 7PM',
+                      '  Open 9AM - 5PM',
                       style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20),
                     )
                   ]),
