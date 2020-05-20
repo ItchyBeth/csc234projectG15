@@ -88,7 +88,7 @@ class searchstate extends State<search> {
                     ),
                     Text(
                       '  Open 9AM - 17AM',
-                      style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),
+                      style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20),
                     )
                   ]),
                   Row(children: [
@@ -100,7 +100,7 @@ class searchstate extends State<search> {
                     ),
                     Text(
                       '  At 1st Floor',
-                      style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20),
+                      style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20),
                     )
                   ]),
                   Row(children: []),
