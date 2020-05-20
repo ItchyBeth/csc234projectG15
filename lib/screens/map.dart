@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/screens/homepage.dart';
 
 class search extends StatefulWidget {
   @override
@@ -23,8 +24,8 @@ class searchstate extends State<search> {
                   Icons.arrow_back_ios,
                   size: 50,
                 ),
+                onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => hpage()),);},
                 color: Colors.orange,
-                onPressed: () {},
               ),
             )),
             Container(
@@ -65,15 +66,12 @@ class searchstate extends State<search> {
                 ),
               ),
             ),
-            
             Container(
               margin: EdgeInsets.only(left: 75.0, right: 50.0, top: 10.0),
               child: Column(
                 children: [
-                  
                   Text(
                     '_______________________',
-                    
                     style: TextStyle(
                         color: Colors.orange,
                         fontWeight: FontWeight.bold,
@@ -87,8 +85,11 @@ class searchstate extends State<search> {
                       semanticLabel: 'Text to announce in accessibility modes',
                     ),
                     Text(
-                      '  Open 9AM - 5PM',
-                      style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20),
+                      '  Open 9AM - 7PM',
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20),
                     )
                   ]),
                   Row(children: [
@@ -100,7 +101,10 @@ class searchstate extends State<search> {
                     ),
                     Text(
                       '  At 1st Floor',
-                      style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20),
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20),
                     )
                   ]),
                   Row(children: []),
