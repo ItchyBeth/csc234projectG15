@@ -72,11 +72,59 @@ class roomstate extends State<room> {
 
                   ],
                 ),
+      
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+
+
+                  children: const <Widget>[
+                    Text(
+                      'Rooms', 
+                      style: TextStyle(fontSize: 20, color: Colors.orange, fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      'Number', 
+                      style: TextStyle(fontSize: 20, color: Colors.black, fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+
+                Column(
+                    children: <Widget>[
+                      RaisedButton(
+                        onPressed: (){},
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15.0),
+                        ),
+                        textColor: Colors.black,
+                        padding: const EdgeInsets.all(0.0),
+                        child: Container(
+                          width: 300,
+                          padding: const EdgeInsets.only(left: 20, right: 20),
+                          child: Row(
+                            children: <Widget>[
+                            Text(
+                            'Cafe',
+                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          ),
+                           Text(
+                            '1',
+                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          ),
+                            ],
+                          ),
+                          
+                          
+                          
+                        ),
+                      )
+                    ],
+                ),
             ],
           ),
       ),
 
-
+      
       
     );
   }

@@ -11,6 +11,7 @@ import 'package:flutter_app/screens/infolivingroom.dart';
 import 'package:flutter_app/screens/infomeetingroom.dart';
 import 'package:flutter_app/screens/inforestroom.dart';
 import 'package:flutter_app/screens/infostartupshop.dart';
+import 'package:flutter_app/screens/roominfo.dart';
 import 'screens/map.dart';
 
 void main(){
