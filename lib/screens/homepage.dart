@@ -1,5 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/screens/map.dart';
+import 'package:flutter_app/screens/roominfo.dart';
 
 class hpage extends StatefulWidget {
   @override
@@ -14,8 +16,10 @@ class hpagestate extends State<hpage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         body: SafeArea(
+          
           child: Center(
             child: Column(
               children: <Widget>[
@@ -43,7 +47,7 @@ class hpagestate extends State<hpage> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(18.0),
                         side: BorderSide(color: Colors.orange)),
-                    onPressed: () => {},
+                    onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => search()),);},
                     color: Colors.orange,
                     child: new Text(
                       "MAP",
@@ -68,7 +72,7 @@ class hpagestate extends State<hpage> {
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(18.0),
                         side: BorderSide(color: Colors.orange)),
-                    onPressed: () => {},
+                    onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => room()),);},
                     color: Colors.orange,
                     child: new Text(
                       "ROOMS INFO", 

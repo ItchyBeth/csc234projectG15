@@ -1,5 +1,6 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_app/screens/homepage.dart';
 
 
 class room extends StatefulWidget {
@@ -22,11 +23,11 @@ class roomstate extends State<room> {
                 alignment: Alignment.topLeft,
                 child: IconButton(
                   icon: Icon(
-                    Icons.arrow_back,
-                    size: 50,
+                    Icons.arrow_back_ios,
+                    size: 40,
                   ),
                   color: Colors.orange,
-                  onPressed: () {},
+                  onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => hpage()),);},
                 ),
               )),
 
