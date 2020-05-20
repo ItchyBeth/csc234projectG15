@@ -21,7 +21,7 @@ class infostartupshopstate extends State<infostartupshop> {
                 alignment: Alignment.topLeft,
                 child: IconButton(
                   icon: Icon(
-                    Icons.arrow_back,
+                    Icons.arrow_back_ios,
                     size: 50,
                   ),
                   color: Colors.orange,

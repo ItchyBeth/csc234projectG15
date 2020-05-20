@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/screens/home.dart';
 import 'package:flutter_app/screens/map.dart';
 import 'package:flutter_app/screens/homepage.dart';
+import 'package:flutter_app/screens/roominfo.dart';
 import 'package:flutter_app/screens/infocafe.dart';
 import 'package:flutter_app/screens/infocomcenter.dart';
 import 'package:flutter_app/screens/infocoop.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       title: 'LXMap',
       debugShowCheckedModeBanner: false,
 
-      home: infostartupshop(),
+      home: infocoop(),
 
     );
   }
