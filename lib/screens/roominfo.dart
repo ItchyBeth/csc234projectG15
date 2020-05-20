@@ -30,7 +30,6 @@ class roomstate extends State<room> {
                 ),
               )),
 
-
               Container(
                 alignment: Alignment.center,
                 margin: EdgeInsets.only(top: 20.0),

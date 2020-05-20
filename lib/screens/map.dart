@@ -20,8 +20,8 @@ class searchstate extends State<search> {
               alignment: Alignment.topLeft,
               child: IconButton(
                 icon: Icon(
-                  Icons.arrow_back,
-                  size: 50,
+                  Icons.arrow_back_ios,
+                  size: 40,
                 ),
                 color: Colors.orange,
                 onPressed: () {},
@@ -52,35 +52,60 @@ class searchstate extends State<search> {
                 height: 350,
               ),
             ),
-            Column(
-              
-                
-
-                 children: const <Widget>[
-                Icon(
-                  Icons.favorite,
-                  color: Colors.pink,
-                  size: 24.0,
-                  semanticLabel: 'Text to announce in accessibility modes',
+            Container(
+              margin: EdgeInsets.only(left: 75.0, right: 30.0, top: 10.0),
+              child: Align(
+                alignment: Alignment.topLeft,
+                child: Text(
+                  'Living Room ',
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontWeight: FontWeight.bold,
+                      fontSize: 30),
+                ),
+              ),
+            ),
+            
+            Container(
+              margin: EdgeInsets.only(left: 75.0, right: 50.0, top: 10.0),
+              child: Column(
+                children: [
                   
-                ),
-                TextSpan(
-                          text: "Living Room \n",
-                          style: TextStyle(color: Colors.black, fontWeight: FontWeight.bold,fontSize: 35),
-                        ),
-                Icon(
-                  Icons.audiotrack,
-                  color: Colors.green,
-                  size: 30.0,
-                ),
-                Icon(
-                  Icons.beach_access,
-                  color: Colors.blue,
-                  size: 36.0,
-                ),
-              ],
-              
-             
+                  Text(
+                    '_______________________',
+                    
+                    style: TextStyle(
+                        color: Colors.orange,
+                        fontWeight: FontWeight.bold,
+                        fontSize: 25),
+                  ),
+                  Row(children: [
+                    Icon(
+                      Icons.access_time,
+                      color: Colors.black,
+                      size: 25.0,
+                      semanticLabel: 'Text to announce in accessibility modes',
+                    ),
+                    Text(
+                      '  Open 9AM - 17AM',
+                      style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20),
+                    )
+                  ]),
+                  Row(children: [
+                    Icon(
+                      Icons.place,
+                      color: Colors.black,
+                      size: 25.0,
+                      semanticLabel: 'Text to announce in accessibility modes',
+                    ),
+                    Text(
+                      '  At 1st Floor',
+                      style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold,fontSize: 20),
+                    )
+                  ]),
+                  Row(children: []),
+                ],
+              ),
             ),
           ],
         ),
