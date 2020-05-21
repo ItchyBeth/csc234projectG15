@@ -2,127 +2,182 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_app/screens/homepage.dart';
 
-class search extends StatefulWidget {
+
+class room extends StatefulWidget {
   @override
-  searchstate createState() => searchstate();
+  roomstate createState() => roomstate();
 }
 
-class searchstate extends State<search> {
+class roomstate extends State<room> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
       body: Container(
         padding: EdgeInsets.only(top: 30),
-        child: Column(
-          children: <Widget>[
-            Container(
-                child: Align(
-              alignment: Alignment.topLeft,
-              child: IconButton(
-                icon: Icon(
-                  Icons.arrow_back_ios,
-                  size: 50,
-                ),
-                onPressed: () {
-                  Navigator.push(
-                    context,
-                    MaterialPageRoute(builder: (context) => hpage()),
-                  );
-                },
-                color: Colors.orange,
-              ),
-            )),
-            Container(
-              margin: EdgeInsets.only(left: 30.0, right: 30.0, top: 30.0),
-              child: new TextField(
-                decoration: InputDecoration(
-                  contentPadding: const EdgeInsets.symmetric(vertical: 15.0),
-                  hintText: "Search",
-                  prefixIcon: Icon(
-                    Icons.search,
-                    color: Colors.orange,
-                  ),
-                  enabledBorder: const OutlineInputBorder(
-                    borderRadius: BorderRadius.all(Radius.circular(80)),
-                    borderSide: BorderSide(color: Colors.orange, width: 2),
-                  ),
-                ),
-              ),
-            ),
-            Container(
-              height: 270.0,
-              child: Image.asset(
-                'ass/img/map.png',
-                width: 350,
-                height: 350,
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.only(left: 75.0, right: 30.0, top: 10.0),
-              child: Align(
-                alignment: Alignment.topLeft,
-                child: Text(
-                  'Living Room ',
-                  style: TextStyle(
-                      color: Colors.black,
-                      fontWeight: FontWeight.bold,
-                      fontSize: 30),
-                ),
-              ),
-            ),
-            Container(
-              margin: EdgeInsets.only(left: 75.0, right: 50.0, top: 10.0),
-              child: Column(
-                children: [
-                  Text(
-                    '_______________________',
-                    style: TextStyle(
-                        color: Colors.orange,
-                        fontWeight: FontWeight.bold,
-                        fontSize: 25),
-                  ),
-                  Row(children: [
-                    Icon(
-                      Icons.access_time,
-                      color: Colors.black,
-                      size: 25.0,
-                      semanticLabel: 'Text to announce in accessibility modes',
-                    ),
-                    Text(
-                      '  Open 9AM - 7PM',
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20),
-                    )
-                  ]),
-                  Row(children: [
-                    Icon(
-                      Icons.place,
-                      color: Colors.black,
-                      size: 25.0,
-                      semanticLabel: 'Text to announce in accessibility modes',
-                    ),
-                    Text(
-                      '  At 1st Floor',
-                      style: TextStyle(
-                          color: Colors.black,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 20),
-                    )
-                  ]),
-
-
-
         
+          child: Column(
+            children: <Widget>[
+              Container(
+                  child: Align(
+                alignment: Alignment.topLeft,
+                child: IconButton(
+                  icon: Icon(
+                    Icons.arrow_back_ios,
+                    size: 40,
+                  ),
+                  color: Colors.orange,
+                  onPressed: () {Navigator.push(context,MaterialPageRoute(builder: (context) => hpage()),);},
+                ),
+              )),
 
-                ],
+              Container(
+                alignment: Alignment.center,
+                margin: EdgeInsets.only(top: 20.0),
+                
+                child: Text(
+                  "1st Floor",
+                  style: TextStyle(fontSize: 25, color: Colors.orange, fontWeight: FontWeight.bold
+                ),
               ),
-            ),
-          ],
-        ),
+              ),
+
+
+              Container(
+                alignment: AlignmentDirectional.center,
+                margin: EdgeInsets.only(bottom: 20.0),
+
+                child: Image.asset(
+                  'ass/img/map.png',
+                  width: 350,
+                ),
+              ),
+
+
+
+
+
+
+                  
+                  Row(children: [
+                    Container(
+                      margin: EdgeInsets.only(left: 55.0,bottom: 30 , top: 10.0),
+                      child: Row(
+                        children: [
+                          Row(children: [
+                              Padding(
+                                padding: EdgeInsets.only(right:45.0),             //home
+                                child: Icon(
+                                  Icons.home,
+                                  color: Colors.orange,
+                                  size: 35.0,
+                                  semanticLabel:
+                                      'Text to announce in accessibility modes',
+                                ),
+                              ),
+                            ],),
+                          Row(
+                            children: [
+                              Padding(
+                                padding: EdgeInsets.only(right:45.0),              //food
+                                child: Icon(
+                                  Icons.fastfood,
+                                  color: Colors.orange,
+                                  size: 35.0,
+                                  semanticLabel:
+                                      'Text to announce in accessibility modes',
+                                ),
+                              ),
+                            ],
+                          ),
+                          Row(children: [
+                              Padding(
+                                padding: EdgeInsets.only(right:45.0),             //lift
+                                child: Icon(
+                                  Icons.unfold_more,
+                                  color: Colors.orange,
+                                  size: 35.0,
+                                  semanticLabel:
+                                      'Text to announce in accessibility modes',
+                                ),
+                              ),
+                            ],),
+                          Row(
+                            children: [
+                              
+                                 Icon(
+                                  Icons.wc,
+                                  color: Colors.orange,
+                                  size: 35.0,
+                                  semanticLabel:
+                                      'Text to announce in accessibility modes',          // toilet
+                                ),
+                             
+                            ],
+                          ),
+                        ],
+                      ),
+                    ),
+                  ]
+                  ),
+
+
+
+
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+
+
+                  children: const <Widget>[
+                    Text(
+                      'Rooms', 
+                      style: TextStyle(fontSize: 20, color: Colors.orange, fontWeight: FontWeight.bold),
+                    ),
+                    Text(
+                      'Number', 
+                      style: TextStyle(fontSize: 20, color: Colors.black, fontWeight: FontWeight.bold),
+                    ),
+                  ],
+                ),
+
+                Column(
+                    children: <Widget>[
+                      RaisedButton(
+                        onPressed: (){},
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(15.0),
+                        ),
+                        textColor: Colors.black,
+                        padding: const EdgeInsets.all(0.0),
+                        child: Container(
+                          width: 300,
+                          padding: const EdgeInsets.only(left: 20, right: 20),
+                          child: Row(
+                            children: <Widget>[
+                            Text(
+                            'Cafe',
+                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          ),
+                           Text(
+                            '1',
+                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          ),
+                            ],
+                          ),
+                          
+                          
+                          
+                        ),
+                      )
+                    ],
+                ),
+            ],
+          ),
       ),
+
+      
+      
     );
   }
 }
