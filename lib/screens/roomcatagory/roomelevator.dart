@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_app/screens/homepage.dart';
 
 
-class room extends StatefulWidget {
+class rElevator extends StatefulWidget {
   @override
-  roomstate createState() => roomstate();
+  roomelestate createState() => roomelestate();
 }
 
-class roomstate extends State<room> {
+class roomelestate extends State<rElevator> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -142,30 +142,7 @@ class roomstate extends State<room> {
 
                 Column(
                     children: <Widget>[
-                      RaisedButton(
-                        onPressed: (){},
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15.0),
-                        ),
-                        textColor: Colors.black,
-                        padding: const EdgeInsets.all(0.0),
-                        child: Container(
-                          width: 300,
-                          padding: const EdgeInsets.only(left: 20, right: 20),
-                          child: Row(
-                            children: <Widget>[
-                            Text(
-                            'Cafe',
-                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                          ),
-                           Text(
-                            '                                          1',
-                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                          ),
-                            ],
-                          ),                  
-                        ),
-                      ),
+
 
                        RaisedButton(
                         onPressed: (){},
@@ -192,55 +169,6 @@ class roomstate extends State<room> {
                         ),
                       ),
 
-                      RaisedButton(
-                        onPressed: (){},
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15.0),
-                        ),
-                        textColor: Colors.black,
-                        padding: const EdgeInsets.all(0.0),
-                        child: Container(
-                          width: 300,
-                          padding: const EdgeInsets.only(left: 20, right: 20),
-                          child: Row(
-                            children: <Widget>[
-                            Text(
-                            'Computer Center',
-                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                          ),
-                           Text(
-                            '                    3',
-                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                          ),
-                            ],
-                          ),
-                        ),
-                      ),
-
-                      RaisedButton(
-                        onPressed: (){},
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15.0),
-                        ),
-                        textColor: Colors.black,
-                        padding: const EdgeInsets.all(0.0),
-                        child: Container(
-                          width: 300,
-                          padding: const EdgeInsets.only(left: 20, right: 20),
-                          child: Row(
-                            children: <Widget>[
-                            Text(
-                            'Living Room',
-                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                          ),
-                           Text(
-                            '                            4',
-                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                          ),
-                            ],
-                          ),
-                        ),
-                      ),
 
                       RaisedButton(
                         onPressed: (){},
@@ -267,30 +195,6 @@ class roomstate extends State<room> {
                         ),
                       ),
 
-                      RaisedButton(
-                        onPressed: (){},
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(15.0),
-                        ),
-                        textColor: Colors.black,
-                        padding: const EdgeInsets.all(0.0),
-                        child: Container(
-                          width: 300,
-                          padding: const EdgeInsets.only(left: 20, right: 20),
-                          child: Row(
-                            children: <Widget>[
-                            Text(
-                            'Restroom',
-                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                          ),
-                           Text(
-                            '                                 6',
-                            style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
-                          ),
-                            ],
-                          ),
-                        ),
-                      ),
 
                     ],
                 ),
