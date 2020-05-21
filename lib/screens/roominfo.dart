@@ -109,16 +109,15 @@ class roomstate extends State<room> {
                             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                           ),
                            Text(
-                            '1',
+                            '                                          1',
                             style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                           ),
                             ],
                           ),
-                          
-                          
-                          
                         ),
-                      )
+                      ),
+
+                     
                     ],
                 ),
             ],
